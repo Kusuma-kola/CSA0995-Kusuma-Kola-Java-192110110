@@ -1,0 +1,46 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.print("enter marks in python: ");
+		Float a=input.nextFloat();
+		System.out.print("enter marks in c programming: ");
+		Float b=input.nextFloat();
+		System.out.print("enter marks in mathematics: ");
+		Float c=input.nextFloat();
+		System.out.print("enter marks in physics: ");
+		Float d=input.nextFloat();
+		if(a>100 | b>100 | c>100 | d>100 | a<0 | b<0 | c<0 | d<0)
+		{
+		    System.out.print("invalid");
+		}
+		else
+		{
+		    Float total=a+b+c+d;
+		    Float avg=total/4;
+		    System.out.print("the total marks: "+total);
+		    System.out.print("\nAggregate: "+avg);
+		    if(avg>75)
+		    {
+		        System.out.print("\nDistinction");
+		    }
+		    else if(avg>=60 && avg<75)
+		    {
+		        System.out.print("\nFirst division");
+		    }
+		    else if(avg>=50 && avg<60)
+		    {
+		        System.out.print("\nSecond division");
+		    }
+		    else if(avg>=40 && avg<50)
+		    {
+		        System.out.print("\nThird division");
+		    }
+		    else
+		    {
+		        System.out.print("\nfail");
+		    }
+		}
+	}
+}
